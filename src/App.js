@@ -1,5 +1,6 @@
 import { useState } from "react";
-import data from "./data.json";
+import data from "./data.json"
+
 
 export default function App() {
   const [items] = useState(data);
@@ -43,6 +44,7 @@ export default function App() {
                   className="flex items-center gap-2"
                 >
                   <img src={item.icon} alt={item.category} />
+                  {item.category}
                 </h3>
 
                 <p className="flex items-center gap-2 text-slate-500">
